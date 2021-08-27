@@ -1,0 +1,36 @@
+.status {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: red;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.active {
+  background-color: green;
+}
+
+.avatar {
+  margin-right: 10px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  width: 400px;
+  height: 150px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 4px;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 20px;
+}
