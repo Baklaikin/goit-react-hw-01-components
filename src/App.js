@@ -1,10 +1,8 @@
-import FriendList from "components/Friends/Friend-list/Friend-list.js";
-// import Profile from "components/SocialProfile/Profile";
-import ProfileCard from "components/SocialProfile/ProfileCard.js";
+import FriendList from "components/Friends/Friend-list/Friend-list";
+import ProfileCard from "components/SocialProfile/ProfileCard";
 import friends from "./friends.json";
 import user from "./user.json";
 import "./App.css";
-console.log(user);
 
 function App() {
   return (
