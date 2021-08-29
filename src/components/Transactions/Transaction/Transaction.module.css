@@ -1,0 +1,16 @@
+.data {
+  text-align: center;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.data:not(:last-child) {
+  border-left: 0;
+  border-top: 0;
+  border-right: 1px solid rgb(209, 207, 207);
+}
+
+.row:nth-child(even) {
+  background-color: rgb(180, 179, 179);
+}

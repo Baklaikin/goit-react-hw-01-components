@@ -1,4 +1,5 @@
 import css from "components/SocialProfile/Profile/Profile.module.css";
+import propTypes from "prop-types";
 
 function Profile({
   avatar,
@@ -35,3 +36,13 @@ function Profile({
 }
 
 export default Profile;
+
+Profile.propTypes = {
+  avatar: propTypes.string.isRequired,
+  name: propTypes.string.isRequired,
+  tag: propTypes.string.isRequired,
+  location: propTypes.string.isRequired,
+  followers: propTypes.number,
+  views: propTypes.number,
+  likes: propTypes.number,
+};

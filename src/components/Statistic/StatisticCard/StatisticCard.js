@@ -1,5 +1,6 @@
 import Statistics from "../StatisticMarkup/Statistic";
 import css from "components/Statistic/StatisticCard/StatisticCard.module.css";
+import propTypes from "prop-types";
 
 function StatisticCard({ title = null, items }) {
   const markup = (
@@ -16,3 +17,7 @@ function StatisticCard({ title = null, items }) {
 }
 
 export default StatisticCard;
+
+StatisticCard.propTypes = {
+  title: propTypes.string.isRequired,
+};
