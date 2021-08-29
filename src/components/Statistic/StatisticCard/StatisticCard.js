@@ -1,0 +1,18 @@
+import Statistics from "../StatisticMarkup/Statistic";
+import css from "components/Statistic/StatisticCard/StatisticCard.module.css";
+
+function StatisticCard({ title = null, items }) {
+  const markup = (
+    <section className={css.statistics}>
+      {(title = null ?? <h2 className={css.title}>{title}</h2>)}
+      <ul className={css.statlist}>
+        {items.map(({ id, label, percentage }) => (
+          <Statistics label={label} percentage={percentage} id={id} key={id} />
+        ))}
+      </ul>
+    </section>
+  );
+  return markup;
+}
+
+export default StatisticCard;
