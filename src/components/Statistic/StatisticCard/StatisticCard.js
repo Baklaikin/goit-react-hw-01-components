@@ -2,10 +2,10 @@ import Statistics from "../StatisticMarkup/Statistic";
 import css from "components/Statistic/StatisticCard/StatisticCard.module.css";
 import propTypes from "prop-types";
 
-function StatisticCard({ title = null, items }) {
+function StatisticCard({ title, items }) {
   const markup = (
     <section className={css.statistics}>
-      {(title = null ?? <h2 className={css.title}>{title}</h2>)}
+      {title && <h2 className={css.title}>{title}</h2>}
       <ul className={css.statlist}>
         {items.map(({ id, label, percentage }) => (
           <Statistics label={label} percentage={percentage} id={id} key={id} />
@@ -19,5 +19,5 @@ function StatisticCard({ title = null, items }) {
 export default StatisticCard;
 
 StatisticCard.propTypes = {
-  title: propTypes.string.isRequired,
+  title: propTypes.string,
 };

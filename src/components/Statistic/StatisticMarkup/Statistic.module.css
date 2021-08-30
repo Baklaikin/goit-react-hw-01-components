@@ -1,9 +1,6 @@
 .item {
   flex-basis: calc(100% / 5);
   border: 1px solid rgb(231, 230, 230);
-}
-
-.item:not(:last-child) {
   border-right: none;
 }
 
